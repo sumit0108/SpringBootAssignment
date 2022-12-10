@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Bank Branches</title>
+</head>
+<body bgcolor="lightgreen">
+<h1>HDFC BANK</h1>
+
+<table border="1">
+<tr>
+<th>City</th>
+<th>Branches</th>
+</tr>
+<tr th:each="Bank: ${Banks}" >  <!-- // here ${Banks} from controler  Key -->
+	<td th:text="Banglore"></td>
+	<td th:text="${Bank.branches}"></td>
+</tr>
+
+</table>
+</body>
+</html>
